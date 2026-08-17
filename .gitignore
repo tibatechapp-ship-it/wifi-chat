@@ -1,0 +1,27 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Editors and operating systems
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.qodo/

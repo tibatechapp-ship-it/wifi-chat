@@ -28,6 +28,26 @@ npm run build
 npm run preview
 ```
 
+## تطبيق Flutter
+
+توجد نسخة الهاتف داخل `flutter_app/`، وتستخدم Flutter لتشغيل الواجهة على Android وiOS. Flutter غير مثبت في بيئة التطوير الحالية، لذلك لم يتم بناء APK هنا.
+
+بعد تثبيت Flutter:
+
+```powershell
+cd flutter_app
+flutter pub get
+flutter run
+```
+
+لإنشاء نسخة Android:
+
+```powershell
+flutter build apk --release
+```
+
+نسخة Flutter الحالية تحتوي واجهة المحادثة ومبدّل `Mesh`/`Internet`. ربط Mesh بين أجهزة حقيقية يحتاج طبقة WebRTC أو signaling محلية في المرحلة التالية.
+
 ## المتغيرات
 
 انسخ `.env.example` إلى `.env` للتشغيل المحلي. يحتوي الملف النموذجي على أسماء المتغيرات ووصفها فقط؛ لا تضع كلمات مرور أو Tokens في Git.

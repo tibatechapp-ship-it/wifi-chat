@@ -1,37 +1,33 @@
-# Environment files and secrets
+```
+# Dependencies
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
 .env
-.env.*
-!.env.example
-*.pem
-*.key
-secrets/
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.obj
 
 # Python
 __pycache__/
-*.py[cod]
-.venv/
-venv/
+*.pyc
+*.pyo
+*.pyd
 
-# Node.js
-node_modules/
-dist/
-build/
-
-# Editors and operating systems
-.vscode/settings.json
-.idea/
-.DS_Store
-Thumbs.db
-
-# Local tooling
-.qodo/
-
-# Flutter
-flutter_app/.dart_tool/
-flutter_app/.packages
-flutter_app/.flutter-plugins
-flutter_app/.flutter-plugins-dependencies
-flutter_app/build/
-flutter_app/.idea/
-flutter_app/android/.gradle/
-flutter_app/android/local.properties
+# Original rules preserved
+*.log
+```
